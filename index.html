@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+  
   <title>Routech.io</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
@@ -16,7 +17,18 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+  <link rel="icon" type="image/png" href="assets/icons/favicon.ico"/>
   <!-- Vendor CSS Files -->
+  <!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -93,7 +105,7 @@
 
         <div class="row">
           <div class="col-lg-6" data-aos="zoom-in">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/img/about.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 d-flex flex-column justify-contents-center" data-aos="fade-left">
             <div class="content pt-4 pt-lg-0">
@@ -308,7 +320,7 @@
     <!-- ======= Pricing Section ======= -->
     <!-- End Pricing Section -->
 
-    <!-- ======= F.A.Q Section ======= -->
+    <!-- ======= F.A.Q Section ======= 
     <section id="faq" class="faq">
       <div class="container">
 
@@ -375,11 +387,11 @@
         </ul>
 
       </div>
-    </section><!-- End Frequently Asked Questions Section -->
+    </section> End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
-      <div class="container">
+      <!--div class="container">
 
         <div class="section-title" data-aos="fade-up">
           <h2>Contact Us</h2>
@@ -391,7 +403,7 @@
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text"  class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group col-md-6">
@@ -421,7 +433,50 @@
 
         </div>
 
+      </div-->
+      <div class="bg-contact100" style="background-image: url('assets/img/bg-01.jpg');" data-aos="fade-left">
+        <div class="container-contact100">
+          <div class="wrap-contact100">
+            <div class="contact100-pic js-tilt" data-tilt data-aos="fade-left" data-aos-delay="200">
+              <img src="assets\img\img-01.png" alt="IMG">
+            </div>
+    
+            <form class="contact100-form validate-form">
+              <span class="contact100-form-title">
+                Get in touch
+              </span>
+    
+              <div class="wrap-input100 validate-input" data-validate = "Name is required" data-aos="fade-left" data-aos-delay="200">
+                <input class="input100" type="text" name="name" placeholder="Name">
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </span>
+              </div>
+    
+              <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz" data-aos="fade-left" data-aos-delay="200">
+                <input class="input100" type="text" name="email" placeholder="Email">
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </span>
+              </div>
+    
+              <div class="wrap-input100 validate-input" data-validate = "Message is required" data-aos="fade-left" data-aos-delay="200">
+                <textarea class="input100" name="message" placeholder="Message"></textarea>
+                <span class="focus-input100"></span>
+              </div>
+    
+              <div class="container-contact100-form-btn" data-aos="fade-up" data-aos-delay="300">
+                <button class="contact100-form-btn">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
+    
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
