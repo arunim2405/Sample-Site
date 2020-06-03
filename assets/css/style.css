@@ -510,13 +510,13 @@ section {
 --------------------------------------------------------------*/
 .about {
   padding: 0;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .about .container {
   background-color: #fff;
-margin-top: 30px;
-  padding: 60px 50px;
+margin-top: 40px;
+  padding: 30px 50px;
 }
 
 @media (max-width: 992px) {
@@ -556,6 +556,7 @@ margin-top: 30px;
 --------------------------------------------------------------*/
 .features {
   padding-bottom: 40px;
+  margin-top: 30px;
 }
 
 .features .nav-tabs {
@@ -605,6 +606,7 @@ margin-top: 30px;
 }
 
 .features .tab-pane.active {
+  padding: 60px;
   -webkit-animation: slide-down 0.5s ease-out;
   animation: slide-down 0.5s ease-out;
 }
