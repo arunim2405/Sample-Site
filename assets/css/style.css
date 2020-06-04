@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 15px 0;
+  background-color: transparent;
 
 }
 
@@ -108,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo h1 {
   font-size: 28px;
   margin: 0;
+  
   padding: 0px 0;
   line-height: 1;
   font-weight: 600;
@@ -389,15 +391,15 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   background-image: url("../img/this/main_back.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right top;
+  background-size: cover;
+  background-position: center;
   margin-top: 70px;
-  padding: 60px 0;
+  padding: 150px 0;
   width: 100%;
 }
 
 #hero h1 {
-  margin: 0 0 20px 0;
+  margin: 0 150px 20px 60px;
   font-size: 42px;
   font-weight: 700;
   line-height: 56px;
@@ -413,6 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
+  margin-left: 60px;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -455,7 +458,6 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-
   overflow: hidden;
 }
 
@@ -487,8 +489,9 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  padding: 0;
-  margin-top: 50px;
+  
+background-color: #ffffff;
+  margin-top: 80px;
 }
 
 .about .container {
@@ -536,7 +539,7 @@ margin-top: 100px;
 .features {
   padding-top: 50px;
   padding-bottom: 40px;
-  margin-top: 80px;
+  margin-top: 60px;
   background-color: transparent;
 }
 
@@ -621,7 +624,8 @@ margin-top: 100px;
 # Services
 --------------------------------------------------------------*/
 .services{
-  margin-top: 30px;
+  margin-top: 100px;
+  padding-bottom: 80px;
 }
 .services .icon-box {
   padding: 20px;
