@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.829);
+  background-color: rgba(255, 255, 255);
 }
 
 #header .logo h1 {
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-social-links a:hover {
   color: #009cea;
-  
+
 }
 #header .header-social-links button[type="submit"] {
   background: #009cea;
@@ -482,7 +482,7 @@ margin-top: 180px;
 # Sections General
 --------------------------------------------------------------*/
 section {
- 
+
   overflow: hidden;
 }
 
@@ -532,13 +532,13 @@ margin-top: 100px;
 .about-pic {
   width: 350px;
   height: 550px;
-  
+
   padding-right: 90px;
- 
+
 
 }
 .about-pic :hover{
-  transition: transform .5s; 
+  transition: transform .5s;
   transform: scale(1.25);
 }
 
@@ -609,7 +609,7 @@ margin-top: 100px;
 }
 
 .features .nav-link:hover {
-  transition: transform .5s; 
+  transition: transform .5s;
   background: #fafbfb;
   transform: scale(1.20);
 }
@@ -631,13 +631,13 @@ margin-top: 100px;
 }
 
 .features .tab-pane.active {
- 
+
   -webkit-animation: slide-down 0.5s ease-out;
   animation: slide-down 0.5s ease-out;
 }
 
 .features .tab-content {
- 
+
   text-align: right;
 }
 
@@ -1613,12 +1613,12 @@ height: 570px;
 .contact100-pic {
   width: 310px;
   padding-top: 55px;
- 
+
 
 }
 .contact100-pic :hover{
-  transition: transform .5s; 
-  
+  transition: transform .5s;
+
   transform: scale(1.10);
 }
 
