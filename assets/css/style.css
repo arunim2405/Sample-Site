@@ -389,51 +389,30 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   background-image: url("../img/this/main_back.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  height: 100vh;
-
+  background-size: contain;
+  background-position: right top;
+  margin-top: 70px;
+  padding: 60px 0;
+  width: 100%;
 }
 
 #hero h1 {
-  position: absolute;
-  width: 604px;
-  height: 122px;
-  top: 188px;
-  left: -50px;
-  font-family: Times New Roman;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 100%;
-  /* or 55px */
-  color: #4E4F67;
-
+  margin: 0 0 20px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #364146;
 }
 
 #hero h2 {
-  position: absolute;
-  width: 735px;
-  height: 72px;
-  left: -50px;
-  top: 339px;
-
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 120%;
-  /* or 24px */
-  color: #4E4F67;
-
+  color: #576971;
+  margin-bottom: 30px;
+  font-size: 24px;
 }
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  margin-left: -65px;
-  margin-top: 439px;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -450,14 +429,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-img {
-
-   padding-left: 180px;
-
-margin-top: 180px;
+  text-align: center;
 }
 
 #hero .hero-img img {
-  width: 100%;
+  width: 70%;
 }
 
 @media (min-width: 1024px) {
@@ -466,18 +442,15 @@ margin-top: 180px;
   }
 }
 
-@media (max-width: 852px) {
+@media (max-width: 992px) {
   #hero h1 {
-
     font-size: 32px;
     line-height: 40px;
   }
   #hero h2 {
-
     font-size: 20px;
   }
 }
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
