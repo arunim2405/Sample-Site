@@ -1,16 +1,3 @@
-/**
-* Template Name: Scaffold - v2.0.0
-* Template URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
 
 @font-face {
   font-family: Montserrat-Regular;
@@ -32,11 +19,18 @@
   src: url('../fonts/montserrat/Montserrat-Medium.ttf');
 }
 
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
 
+html{
+  scroll-behavior: smooth
+
+}
 a {
   color: #009cea;
 }
@@ -49,6 +43,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -108,17 +103,17 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo h1 {
   font-size: 28px;
   margin: 0;
-  
-  padding: 0px 0;
+
+  padding-left: 50px;
   line-height: 1;
   font-weight: 900;
   letter-spacing: 1px;
-  font-family: "Open Sans", sans-serif;
+  
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #181d1f;
-  font-size: 35px;
+  color: #10152b;
+  font-size: 36px;
   font: bold;
   text-decoration: none;
 }
@@ -132,8 +127,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #header .logo h1 {
-    font-size: 28px;
-    padding: 8px 0;
+    font-size: 24px;
+    padding: 0px 0;
+
   }
 }
 
@@ -153,7 +149,8 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 #header .header-social-links button[type="submit"] {
-  background: #009cea;
+
+  background: linear-gradient(90deg, #78b6f7 -0.17%, #328FF2 78.33%);
   border: 0;
   align-content: center;
   padding: 5px 24px;
@@ -168,6 +165,20 @@ h1, h2, h3, h4, h5, h6 {
   .header-social-links {
     padding-right: 48px;
   }
+  .header-social-links button[type="submit"] {
+
+    background: linear-gradient(90deg, #78b6f7 -0.17%, #328FF2 78.33%);
+    border: 0;
+    font-size: 12px;
+    align-content: center;
+    padding: 5px 10px;
+    margin-left: 15px;
+    margin-top: 6px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
 }
 
 /*--------------------------------------------------------------
@@ -391,31 +402,41 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("../img/this/main_back.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   /*margin-top: 70px;*/
-  padding: 180px 0;
+  padding-top: 200px;
+  padding-bottom: 300px;
   width: 100%;
   height: 100vh;
 }
 
 #hero h1 {
-  margin: 0 150px 20px 60px;
+  /*margin: 0 150px 20px 60px;
   font-size: 42px;
   font-weight: 700;
   line-height: 56px;
-  color: #364146;
+  color: #364146;*/
+  margin: 0 0 20px 55px;
+  font-size: 43px;
+  font-family: lato_regular;
+  font-weight: 800;
+  line-height: 56px;
+  color: #081c53;
+
 }
 
 #hero h2 {
   color: #576971;
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 35px;
+  font-weight: 800;
 }
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  margin-left: 60px;
+  margin-left: 55px;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -424,7 +445,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
   transition: 0.5s;
   color: #fff;
-  background: #009cea;
+
+  background: linear-gradient(90deg, #96c9ff -0.17%, #328FF2 78.33%);
 }
 
 #hero .btn-get-started:hover {
@@ -436,23 +458,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-img img {
-  width: 100%;
+  width: 90%;
 }
 
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    background-color: #ffffff;
   }
 }
 
 @media (max-width: 992px) {
   #hero h1 {
-    font-size: 32px;
-    line-height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    line-height: 27px;
   }
   #hero h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
+  
+#hero .btn-get-started {
+ margin-left: 10px;
+}
 }
 /*--------------------------------------------------------------
 # Sections General
@@ -473,23 +501,49 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 400;
+  font-family: lato_regular;
+  font-weight: 900;
+  font-size: 40px;
+  color: #081c53;
   margin-bottom: 20px;
   padding-bottom: 0;
-  font-family: "Poppins", sans-serif;
-  color: #0d1316;
-}
+  letter-spacing: 1px;
+  }
 
 .section-title p {
+  color: rgb(17, 16, 22);
   margin-bottom: 0;
+}
+.special-text {
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0, rgba(255,255,255,0) 48%, rgba(255,255,255,0) 50%, #a2f4ff 52%, #a2f4ff 100%);
+}
+.special-text2{
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0, rgba(255,255,255,0) 48%, rgba(255,255,255,0) 50%, #a2f4ff 52%, #a2f4ff 100%);
+  font-family: lato_regular;
+  font-weight: 900;
+  font-size: 40px;
+  color: #081c53;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  letter-spacing: 1px;
+}
+
+
+@media (min-width: 1024px) {
+  #section-title-focus {
+    padding-bottom: 12px;
+  }
+  #cont{
+    padding-top: 12px;
+  }
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about {
-  
+
 background-color: #ffffff;
   margin-top: 80px;
 }
@@ -508,12 +562,19 @@ margin-top: 100px;
 
 
 .about .content h3 {
-  font-weight: 400;
+  font-weight: 900;
   font-size: 32px;
   color: #242c30;
-  font-family: "Poppins", sans-serif;
+  font-family: lato_regular;
 }
 
+.about .content h3 .special-text3{
+  font-weight: 900;
+  font-size: 32px;
+  color: #242c30;
+  font-family: lato_regular;
+ background: linear-gradient(to bottom, rgba(255,255,255,0) 0, rgba(255,255,255,0) 48%, rgba(255,255,255,0) 50%, rgb(255, 255, 147),52%, rgb(255, 255, 147) 100%);
+}
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -535,16 +596,21 @@ margin-top: 100px;
 
 /*--------------------------------------------------------------
 # Features
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .features {
   padding-top: 50px;
   padding-bottom: 40px;
+  margin-bottom: 80px;
   margin-top: 60px;
   background-color: transparent;
+}
+.features .container .section-title .special-text {
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0, rgba(255,255,255,0) 48%, rgba(255,255,255,0) 50%, #a2f4ff 52%, #a2f4ff 100%);
 }
 
 .features .nav-tabs {
   border: 0;
+
 }
 
 .features .nav-link {
@@ -559,13 +625,14 @@ margin-top: 100px;
 
 .features .nav-link h4 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   transition: 0.3s ease-in-out;
-  color: #2c3538;
+  color: #081c53;
 }
 
 .features .nav-link p {
-  font-size: 14px;
+  font-size: 15px;
+  color: #081c53;
   margin-bottom: 0;
 }
 
@@ -619,23 +686,27 @@ margin-top: 100px;
     opacity: 1;
   }
 }
+*/
+
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
 .services{
   margin-top: 100px;
   padding-bottom: 80px;
+  background-color: white;
 }
 .services .icon-box {
-  padding: 20px;
-  margin-top: 20px;
+  padding: 15px;
+  margin-top: 40px;
   position: relative;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  transition: all 0.3s ease-in-out;
-  border-radius: 4px;
+  box-shadow: -6px -6px 16px #FFFFFF, 6px 6px 16px #BECDE2;
+border-radius: 4px;
+ transition: all 0.3s ease-in-out;
   text-align: center;
   border-bottom: 3px solid #fff;
 }
@@ -661,8 +732,10 @@ margin-top: 100px;
 }
 
 .services .description {
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  color: #262c3d;
   margin-bottom: 0;
 }
 
@@ -672,6 +745,22 @@ margin-top: 100px;
 
 .services .icon-box-pink:hover {
   border-color: #ff689b;
+}
+
+.services .icon-box-orange .icon i {
+  color: orange;
+}
+
+.services .icon-box-orange:hover {
+  border-color: orange;
+}
+
+.services .icon-box-gold .icon i {
+  color: darkred;
+}
+
+.services .icon-box-gold:hover {
+  border-color: darkred;
 }
 
 .services .icon-box-cyan .icon i {
@@ -1551,7 +1640,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: rgba(103, 171, 235, 0.9);
+  background: rgba(103, 171, 235, 0.664);
 }
 
 .wrap-contact100 {
@@ -1573,8 +1662,9 @@ height: 570px;
 /*------------------------------------------------------------------
 [  ]*/
 .contact100-pic {
-  width: 310px;
+margin-left: -10px;
   padding-top: 55px;
+
 
 
 }
@@ -1585,7 +1675,7 @@ height: 570px;
 }
 
 .contact100-pic img {
-  max-width: 100%;
+  max-width: 110%;
 }
 
 
@@ -1608,18 +1698,20 @@ height: 570px;
 
 input.input100 {
   height: 50px;
+
+  box-shadow: #2282ff;
   border-radius: 8px;
-  padding: 0 30px 0 50px;
+  padding: 0 15px 0 50px;
 }
 
 input.input100[name="email"] {
-  padding: 0 30px 0 50px;
+  padding: 0 15px 0 50px;
 }
 
 textarea.input100 {
   min-height: 150px;
   border-radius: 8px;
-  padding: 14px 30px;
+  padding: 15px 30px;
 }
 
 /*---------------------------------------------*/
@@ -1633,11 +1725,12 @@ textarea.input100 {
 .input100 {
   display: block;
   width: 100%;
-  background: #e6e6e6;
+  background: #F5FAFF;
+border-radius: 4px;
   font-family: Montserrat-Bold;
   font-size: 15px;
+  color: #5F7388;;
   line-height: 1.5;
-  color: #666666;
 }
 
 
@@ -1646,7 +1739,7 @@ textarea.input100 {
 .focus-input100 {
   display: block;
   position: absolute;
-  border-radius: 15px;
+  border-radius: 6px;
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -1721,8 +1814,8 @@ textarea.input100 {
 .contact100-form-btn {
   width: 100%;
   height: 50px;
-  border-radius: 25px;
-  background: #009cea;
+  background: linear-gradient(90deg, #78b6f7 -0.17%, #328FF2 78.33%);
+border-radius: 7px;
   font-family: Montserrat-Bold;
   font-size: 15px;
   line-height: 1.5;
@@ -1744,6 +1837,7 @@ textarea.input100 {
 
 .contact100-form-btn:hover {
   background: #d2fcff;
+  color: #100f4d;
 }
 
 /*------------------------------------------------------------------

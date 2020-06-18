@@ -1,9 +1,4 @@
-/**
-* Template Name: Scaffold - v2.0.0
-* Template URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 !(function($) {
   "use strict";
 
@@ -130,6 +125,8 @@
 
     return false;
   });
+  //mvp timeline 
+  
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
@@ -171,6 +168,7 @@
     }
   });
 
+  //this is new
   // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
     autoplay: true,
